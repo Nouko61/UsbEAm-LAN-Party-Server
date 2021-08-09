@@ -1,7 +1,7 @@
 # UsbEAm-LAN-Party-Serve
 UsbEAm LAN Party 服务端
 
-客户端下载 https://www.dogfight360.com/blog/1590/
+客户端介绍/下载：https://www.dogfight360.com/blog/1590/
 
 ## 用法
 
