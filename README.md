@@ -1,4 +1,4 @@
-# UsbEAm-LAN-Party-Serve
+# UsbEAm-LAN-Party-Server
 UsbEAm LAN Party 服务端
 
 客户端介绍/下载：https://www.dogfight360.com/blog/1590/
