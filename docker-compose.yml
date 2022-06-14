@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  lan-party:
+    build: .
+    restart: always
+    ports:
+      - "3075:3075/tcp"
+      - "3074:3074/udp"
+    volumes:
+      - "./data:/lan-party/data"
+    cap_add:
+      - NET_ADMIN

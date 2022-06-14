@@ -1,15 +1,16 @@
 #!/bin/sh
-mkdir -p /dev/net
 
+# 添加tun设备
+mkdir -p /dev/net
 if [ ! -c /dev/net/tun ]; then
     mknod /dev/net/tun c 10 200
 fi
 
-cd /lan-party
-
+# 添加初始用户名密码
 if [ ! -f data/psw-file ]; then
     echo "username1 password1" > data/psw-file
 fi
 
-nohup openvpn server_tcp.conf > data/openvpn-tcp.log &
-openvpn server_udp.conf > data/openvpn-udp.log
+# 开启服务端
+openvpn server_tcp.conf &
+openvpn server_udp.conf

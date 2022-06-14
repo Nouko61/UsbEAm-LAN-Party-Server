@@ -7,8 +7,8 @@
 # one row per user with the username first followed by
 # one or more space(s) or tab(s) and then the password.
 
-PASSFILE="/lan-party/data/psw-file"
-LOG_FILE="/lan-party/data/openvpn-password.log"
+PASSFILE="data/psw-file"
+LOG_FILE="data/openvpn-password.log"
 TIME_STAMP=`date "+%Y-%m-%d %T"`
 
 ###########################################################

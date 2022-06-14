@@ -5,22 +5,16 @@ UsbEAm LAN Party 服务端
 
 ## 用法
 
-* 创建数据卷
+* 首先安装docker环境，以ubuntu 20.04为例，使用下面命令一键安装
 
   ```
-  docker volume create lan-party-data
+  sudo apt install docker-compose
   ```
 
 * 启动容器
 
   ```
-  docker run -d \
-  -v lan-party-data:/lan-party/data \
-  --name=lan-party \
-  --cap-add=NET_ADMIN \
-  -p 3075:3075/tcp \
-  -p 3074:3074/udp \
-  --restart=always \
-  nouko61/usbeam-lan-party
+  sudo docker-compose up -d
   ```
-* 默认用户名 ```username1``` 密码 ```password1``` 可在数据卷里修改
+
+* 默认用户名 **username1** 密码 **password1** ，可在 ```data/psw-file``` 中修改
