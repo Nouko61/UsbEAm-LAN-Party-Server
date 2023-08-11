@@ -7,7 +7,7 @@ on:
     tags: [ 'v*.*.*' ]
 
 env:
-  IMAGE_NAME: nouko61/usbeam-lan-party
+  REGISTRY_IMAGE: nouko61/usbeam-lan-party
 
 
 jobs:
