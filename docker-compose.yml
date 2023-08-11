@@ -2,12 +2,12 @@ version: '3'
 
 services:
   lan-party:
-    build: .
+    image: nouko61/usbeam-lan-party
     restart: always
     ports:
       - "3075:3075/tcp"
       - "3074:3074/udp"
     volumes:
-      - "./data:/lan-party/data"
+      - "./lan-party:/lan-party/data"
     cap_add:
       - NET_ADMIN

@@ -1,27 +1,20 @@
 # UsbEAm-LAN-Party-Server
 UsbEAm LAN Party 服务端
 
-客户端介绍/下载：https://www.dogfight360.com/blog/1590/
+介绍/客户端下载：https://www.dogfight360.com/blog/1590/
 
-## 使用docker-compose启动
+## 使用
 
-* 首先安装docker环境，以ubuntu 20.04为例，使用下面命令一键安装
+* 安装docker，Ubuntu系统可以使用下面的命令安装
 
   ```
   sudo apt install docker-compose
   ```
 
-* 克隆代码
-
-  ```
-  git clone https://github.com/Nouko61/UsbEAm-LAN-Party-Server
-  ```
-
 * 启动容器
 
   ```
-  cd UsbEAm-LAN-Party-Server
-  sudo docker-compose up -d
+  sudo docker run -d -v ./lan-party:/lan-party/data --name=lan-party --cap-add=NET_ADMIN -p 3075:3075/tcp -p 3074:3074/udp --restart=always nouko61/usbeam-lan-party
   ```
 
-* 默认用户名 **username1** 密码 **password1** ，可在 ```data/psw-file``` 中修改
+* 默认用户名 **username1** 密码 **password1** ，可在 ```psw-file``` 中修改
