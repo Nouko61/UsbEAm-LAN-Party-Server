@@ -8,13 +8,18 @@ UsbEAm LAN Party 服务端
 * 安装docker，Ubuntu系统可以使用下面的命令安装
 
   ```
-  sudo apt install docker-compose
+  sudo apt install -y docker.io
   ```
 
 * 启动容器
 
   ```
-  sudo docker run -d -v ./lan-party:/lan-party/data --name=lan-party --cap-add=NET_ADMIN -p 3075:3075/tcp -p 3074:3074/udp --restart=always nouko61/usbeam-lan-party
+  sudo docker run -d --restart=always \
+  --cap-add=NET_ADMIN \
+  -v ./lan-party:/lan-party/data \
+  -p 3075:3075/tcp -p 3074:3074/udp \
+  --name=lan-party \
+  nouko61/usbeam-lan-party
   ```
 
-* 默认用户名 **username1** 密码 **password1** ，可在 ```psw-file``` 中修改
+* 默认用户名 **username1** 密码 **password1** ，可在挂载目录中的 ```psw-file``` 里修改
