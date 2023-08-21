@@ -1,11 +1,11 @@
 # UsbEAm-LAN-Party-Server
-UsbEAm LAN Party 服务端
+UsbEAm LAN Party Docker服务端
 
 介绍/客户端下载：https://www.dogfight360.com/blog/1590/
 
 ## 使用
 
-* 安装docker，Ubuntu系统可以使用下面的命令安装
+* 安装Docker，Ubuntu系统可以使用下面的命令安装
 
   ```
   sudo apt install -y docker.io
