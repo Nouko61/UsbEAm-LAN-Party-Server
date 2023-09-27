@@ -2,8 +2,7 @@ FROM alpine
 
 LABEL maintainer="nao_ke@qq.com"
 
-RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories \
-      && apk add --no-cache openvpn
+RUN apk add --no-cache openvpn=2.4.11-r0 --repository=http://dl-cdn.alpinelinux.org/alpine/v3.11/main
 
 COPY server /lan-party
 
