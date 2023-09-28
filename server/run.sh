@@ -6,6 +6,7 @@ if [ ! -c /dev/net/tun ]; then
     mknod /dev/net/tun c 10 200
 fi
 
+# 创建数据文件夹
 if [ ! -d data ]; then
     mkdir data
 fi
@@ -16,7 +17,7 @@ if [ ! -f data/psw-file ]; then
 fi
 
 # 授予权限
-chown -R openvpn:openvpn data
+chown -R nobody:nogroup data
 chmod +x checkpsw.sh
 
 # 开启服务端
