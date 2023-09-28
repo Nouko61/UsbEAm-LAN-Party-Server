@@ -2,7 +2,7 @@ FROM alpine
 
 LABEL maintainer="nao_ke@qq.com"
 
-RUN apk add --no-cache openvpn=2.4.11-r0 --repository=http://dl-cdn.alpinelinux.org/alpine/v3.11/main
+RUN apk add --no-cache openvpn=2.5.6-r0 --repository=http://dl-cdn.alpinelinux.org/alpine/v3.15/main
 
 COPY server /lan-party
 

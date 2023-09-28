@@ -11,6 +11,9 @@ if [ ! -f data/psw-file ]; then
     echo "username1 password1" > data/psw-file
 fi
 
+# 授予权限
+chown -R openvpn:openvpn data
+
 # 开启服务端
 openvpn server_tcp.conf &
 openvpn server_udp.conf
