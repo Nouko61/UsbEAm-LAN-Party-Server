@@ -33,19 +33,18 @@ Docker Hub地址：https://hub.docker.com/r/nouko61/usbeam-lan-party
 
   ```
   sudo apt update
-  sudo apt install -y docker-compose
+  sudo apt install -y docker-compose wget
   ```
 
-* 克隆项目
+* 获取compose文件
 
   ```
-  git clone https://github.com/Nouko61/UsbEAm-LAN-Party-Server
+  wget https://github.com/Nouko61/UsbEAm-LAN-Party-Server/raw/master/docker-compose.yml
   ```
 
 * 启动
 
   ```
-  cd UsbEAm-LAN-Party-Server
   sudo docker-compose up -d
   ```
 
