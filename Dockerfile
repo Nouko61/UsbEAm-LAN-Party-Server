@@ -4,7 +4,7 @@ LABEL maintainer="nao_ke@qq.com"
 
 RUN apk add --no-cache openvpn=2.6.5-r0 --repository=http://dl-cdn.alpinelinux.org/alpine/v3.18/main
 
-COPY server /lan-party
+COPY linux /lan-party
 
 WORKDIR /lan-party
 
