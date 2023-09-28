@@ -39,7 +39,7 @@ Docker Hub地址：https://hub.docker.com/r/nouko61/usbeam-lan-party
 * 获取compose文件
 
   ```
-  wget https://github.com/Nouko61/UsbEAm-LAN-Party-Server/raw/master/docker-compose.yml
+  wget https://gitee.com/nouko61/UsbEAm-LAN-Party-Server/raw/master/docker-compose.yml
   ```
 
 * 启动
