@@ -1,5 +1,5 @@
 # UsbEAm-LAN-Party-Server
-UsbEAm LAN Party Docker服务端
+UsbEAm LAN Party 服务端
 
 Docker Hub地址：https://hub.docker.com/r/nouko61/usbeam-lan-party
 
