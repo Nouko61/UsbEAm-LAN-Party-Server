@@ -62,7 +62,7 @@ Docker Hub地址：https://hub.docker.com/r/nouko61/usbeam-lan-party
   git clone https://gitee.com/nouko61/UsbEAm-LAN-Party-Server.git
   ```
 
-* 启动
+* 启动（后台运行）
 
   ```
   cd UsbEAm-LAN-Party-Server/server
