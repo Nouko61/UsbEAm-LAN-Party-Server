@@ -1,8 +1,6 @@
 # UsbEAm-LAN-Party-Server
 UsbEAm LAN Party 服务端
 
-[Docker Hub](https://hub.docker.com/r/nouko61/usbeam-lan-party)
-
 介绍/客户端下载：https://www.dogfight360.com/blog/1590/
 
 默认用户名 **username1** 密码 **password1** ，可在 ```psw-file``` 文件里修改
@@ -18,6 +16,8 @@ UsbEAm LAN Party 服务端
 > 默认只能同时运行一个服务，推荐使用UDP服务。如果要同时运行TCP服务与UDP服务，需要在开始菜单中添加虚拟网卡
 
 ## Linux
+
+[Docker Hub](https://hub.docker.com/r/nouko61/usbeam-lan-party)
 
 ### 方式一：直接启动
 
