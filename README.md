@@ -37,7 +37,7 @@ UsbEAm LAN Party 服务端
 
   ```
   cd UsbEAm-LAN-Party-Server/linux
-  sudo nohup sh run.sh &
+  sudo -b sh run.sh
   ```
 
 ### 方式二：使用Docker启动
