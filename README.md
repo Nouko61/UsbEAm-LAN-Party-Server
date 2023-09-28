@@ -9,11 +9,13 @@ UsbEAm LAN Party 服务端
 
 1. 下载发行版（Releases）里最新的 **windows.zip**
 
-2. 运行 **OpenVPN-2.6.6-I001-amd64**，安装 openvpn
+2. 运行 **OpenVPN-2.6.6-I001-amd64.msi**，安装 openvpn
 
 3. 运行 ```启动UDP服务.bat```
 
-> Windows 默认只能同时运行一个服务，推荐使用UDP服务。
+> Windows 默认只能同时运行一个服务，推荐只运行UDP服务。
+> 
+> 如果需要同时开启UDP服务与TCP服务，需要开启路由转发并添加额外的虚拟网卡。
 
 ## Linux
 
