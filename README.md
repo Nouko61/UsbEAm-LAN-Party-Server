@@ -7,13 +7,14 @@ Docker Hub地址：https://hub.docker.com/r/nouko61/usbeam-lan-party
 
 ## 使用
 
+默认用户名 **username1** 密码 **password1** ，可在数据目录中的 ```psw-file``` 里修改
+
 ### 方式一：使用Docker启动
 
 * 安装Docker，Ubuntu系统可以使用下面的命令安装
 
   ```
-  sudo apt update
-  sudo apt install -y docker.io
+  sudo apt update && sudo apt install -y docker.io
   ```
 
 * 启动容器
@@ -32,8 +33,7 @@ Docker Hub地址：https://hub.docker.com/r/nouko61/usbeam-lan-party
 * 安装Docker Compose，Ubuntu系统可以使用下面的命令安装
 
   ```
-  sudo apt update
-  sudo apt install -y docker-compose wget
+  sudo apt update && sudo apt install -y docker-compose wget
   ```
 
 * 获取compose文件
@@ -48,6 +48,23 @@ Docker Hub地址：https://hub.docker.com/r/nouko61/usbeam-lan-party
   sudo docker-compose up -d
   ```
 
-### 用户名密码
+### 方式三：直接启动
 
-* 默认用户名 **username1** 密码 **password1** ，可在挂载目录中的 ```psw-file``` 里修改
+* 安装依赖，Ubuntu系统可以使用下面的命令安装
+
+  ```
+  sudo apt update && sudo apt install -y openvpn git
+  ```
+
+* 克隆项目
+
+  ```
+  git clone https://gitee.com/nouko61/UsbEAm-LAN-Party-Server.git
+  ```
+
+* 启动
+
+  ```
+  cd UsbEAm-LAN-Party-Server/server
+  sudo nohup sh run.sh &
+  ```
